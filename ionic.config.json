@@ -1,0 +1,8 @@
+{
+  "name": "ionic2-ziggeo-demo",
+  "app_id": "ec1a2627",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
