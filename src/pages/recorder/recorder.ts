@@ -5,12 +5,15 @@ import {
 } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
+import { API_TOKEN } from "../../constants";
+
 @Component({
     selector: 'app-recorder',
     templateUrl: 'recorder.html'
 })
 export class RecorderPage implements AfterViewInit {
     title = 'Recorder page';
+    api_token = API_TOKEN;
     recorder: any;
     @ViewChild('ziggeorecorder') ziggeorecorder: any;
 
