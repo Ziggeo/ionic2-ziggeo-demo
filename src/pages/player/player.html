@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{ title }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ziggeo-player #ziggeoplayer
+     [apiKey]="'ZIGGEO_API_KEY'"
+     [options]="{video: 'VIDEO_TOKEN', width: 320, height: 180}"
+  ></ziggeo-player>
+</ion-content>

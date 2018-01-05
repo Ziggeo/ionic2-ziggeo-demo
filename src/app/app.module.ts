@@ -3,8 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
+import { ZiggeoModule } from "angular-ziggeo/build/ziggeo";
+import { ZiggeoPlayerComponent } from "angular-ziggeo/build/ziggeo";
+import { ZiggeoRecorderComponent } from "angular-ziggeo/build/ziggeo";
+
+import { RecorderPage } from '../pages/recorder/recorder';
+import { PlayerPage } from '../pages/player/player';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -14,21 +18,24 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    ContactPage,
+    RecorderPage,
+    PlayerPage,
     HomePage,
     TabsPage
   ],
   imports: [
     BrowserModule,
+      ZiggeoModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
-    ContactPage,
+    RecorderPage,
+    PlayerPage,
     HomePage,
+      ZiggeoRecorderComponent,
+      ZiggeoPlayerComponent,
     TabsPage
   ],
   providers: [

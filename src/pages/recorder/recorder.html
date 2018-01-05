@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ziggeo Recorder
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ziggeo-recorder #ziggeorecorder
+   [apiKey]="'ZIGGEO_API_KEY'"
+   [options]="{height: 200, width: 370}"
+  ></ziggeo-recorder>
+</ion-content>
