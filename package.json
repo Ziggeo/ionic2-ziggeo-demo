@@ -2,7 +2,7 @@
   "name": "ionic2-ziggeo-demo",
   "version": "0.0.1",
   "author": "Ziggeo Inc.",
-  "homepage": "http://ziggeo.com/",
+  "homepage": "https://ziggeo.com",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
@@ -36,5 +36,5 @@
     "@ionic/app-scripts": "3.1.6",
     "typescript": "2.4.2"
   },
-  "description": "An Ionic and Ziggeo integration project with"
+  "description": "An Ionic and Ziggeo integration demo"
 }
